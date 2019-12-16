@@ -11,3 +11,5 @@ Reguli :
 
 1st prize : OCA/OCP Pack
 Popularity Prize : Head First Java.
+
+https://materiaalit.github.io/2013-oo-programming/part1/week-1/
