@@ -13,5 +13,13 @@ public class Varying_variables {
         System.out.println(bacon + ' ' + baconWeight);
         System.out.println(tractor + ' '+ ifIsFalse);
         System.out.println(nutshell +'\n'+ numberOfChikens+'\n'+baconWeight+'\n'+ifIsFalse);
+        System.out.println("++++++++++++++++++++++++");
+        numberOfChikens = 9000;
+        baconWeight = 0.1;
+        String nameOfTractor = "Zetor";
+        System.out.println(chickens + ' ' + numberOfChikens);
+        System.out.println(bacon + ' ' + baconWeight);
+        System.out.println(tractor + ' '+ nameOfTractor);
+        System.out.println(nutshell +'\n'+ numberOfChikens+'\n'+baconWeight+'\n'+nameOfTractor);
     }
 }
