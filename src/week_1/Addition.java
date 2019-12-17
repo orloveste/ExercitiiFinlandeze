@@ -5,6 +5,10 @@ public class Addition {
         int secondNumber = 4;
         int additionResult = firstNumber+secondNumber;
         System.out.println(firstNumber +" + "+ secondNumber+" = "+ additionResult);
+        firstNumber = 73457;
+        secondNumber = 12888;
+        additionResult = firstNumber+secondNumber;
+        System.out.println(firstNumber +" + "+ secondNumber+" = "+ additionResult);
     }
 }
 //    Exercise 6: Addition
