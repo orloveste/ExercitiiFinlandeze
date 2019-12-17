@@ -21,3 +21,4 @@ public class Multiplication {
 //277 * 111 = 30747
 //
 //What is the biggest multiplication that your program is able to calculate?
+// maxim result 2,147,483,647
