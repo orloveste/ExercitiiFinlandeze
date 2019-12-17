@@ -6,6 +6,10 @@ public class Multiplication {
         int secondNumber = 8;
         int multiplication = firstNumber*secondNumber;
         System.out.println(firstNumber +" * "+ secondNumber+" = "+ multiplication);
+        firstNumber = 277;
+        secondNumber = 111;
+        multiplication = firstNumber*secondNumber;
+        System.out.println(firstNumber +" * "+ secondNumber+" = "+ multiplication);
     }
 }
 //Exercise 7: Multiplication
