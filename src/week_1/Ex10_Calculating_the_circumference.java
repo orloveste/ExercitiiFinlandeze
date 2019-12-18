@@ -2,7 +2,7 @@ package week_1;
 
 import java.util.Scanner;
 
-public class Calculating_the_circumference {
+public class Ex10_Calculating_the_circumference {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.print("Type the radius: ");

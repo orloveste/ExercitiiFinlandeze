@@ -1,6 +1,6 @@
 package week_1;
 
-public class Multiplication {
+public class Ex7_Multiplication {
     public static void main(String[] args) {
         int firstNumber = 2;
         int secondNumber = 8;

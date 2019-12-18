@@ -1,6 +1,6 @@
 package week_1;
 
-public class Varying_variables {
+public class Ex4_Varying_variables {
     public static void main(String[] args) {
         String chickens = "Chickens:";
         int numberOfChikens = 3;

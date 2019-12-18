@@ -1,6 +1,6 @@
 package week_1;
 
-public class Seconds_in_a_year {
+public class Ex5_Seconds_in_a_year {
     //Exercise 5: Seconds in a year
     //Create a program that counts how many seconds there are in a year. You can assume that a year consists of 365
     // days (therefore the year is not a leap year).

@@ -1,12 +1,14 @@
 package week_1;
 
+import nhlstats.NHLStatistics;
+
 import java.util.Scanner;
-public class NHL_statistics_part_1 {
+public class Ex13_NHL_statistics_part_1 {
     public static void main(String[] args) throws Exception{
         Scanner reader = new Scanner(System.in);
 
         System.out.println("Top ten by points");
-//        nhllib.sortByPoints();
-//        NHLStatistics.top(10);
+
+        NHLStatistics.top(10);
     }
 }

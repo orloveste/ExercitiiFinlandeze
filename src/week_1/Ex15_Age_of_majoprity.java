@@ -2,7 +2,7 @@ package week_1;
 
 import java.util.Scanner;
 
-public class Age_of_majoprity {
+public class Ex15_Age_of_majoprity {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.print("How old are you? ");

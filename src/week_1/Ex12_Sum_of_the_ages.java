@@ -2,7 +2,7 @@ package week_1;
 
 import java.util.Scanner;
 
-public class Sum_of_the_ages {
+public class Ex12_Sum_of_the_ages {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.print("Type your name: ");

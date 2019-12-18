@@ -1,6 +1,8 @@
 <component name="libraryTable">
   <library name="nhllib">
-    <CLASSES />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../nhllib.jar!/" />
+    </CLASSES>
     <JAVADOC />
     <SOURCES />
   </library>
