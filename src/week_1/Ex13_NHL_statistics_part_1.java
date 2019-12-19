@@ -12,8 +12,9 @@ public class Ex13_NHL_statistics_part_1 {
         NHLStatistics.top(25);
         System.out.println("\nStatistics for Sidney Crosby");
         NHLStatistics.searchByPlayer("Sidney Crosby");
-        System.out.println("\nStatistics for Philadelphia Flyers");
+        System.out.println("\nStatistics for Philadelphia Flyers *");
         NHLStatistics.teamStatistics("PHI");
+        System.out.println("*players based on penalty amounts");
         System.out.println("\nPlayers in Anaheim Ducks (abbreviation: ANA) ordered by points");
         NHLStatistics.sortByPoints();
         NHLStatistics.teamStatistics("ANA");
@@ -28,7 +29,7 @@ public class Ex13_NHL_statistics_part_1 {
 //Print the top ten players based on goals
 //Print the top 25 players based on penalty amounts
 //Print the statistics for Sidney Crosby
-//Print the statistics for Philadelphia Flyers (abbreviation: PHI). Note in which order the players are printed in and
-// why that might be!
+//Print the statistics for Philadelphia Flyers (abbreviation: PHI). *Note in which order the players are printed in and
+// why that might be!*
 //Print the players in Anaheim Ducks (abbreviation: ANA) ordered by points
 //After you have successfully submitted the exercise, you can play with the code as you wish!
