@@ -4,12 +4,14 @@ import java.util.Scanner;
 
 public class Ex22_Password {
     public static void main(String[] args) {
+        String password = "carrot";
+        String secretMessage = "Well done!";
         while (true) {
             System.out.print("Type the password: ");
-            Scanner reader = new Scanner(System.in);
-            String command = reader.nextLine();
-            if (command.equals("carrot")) {
-                System.out.println("Right!\n\nThe secret is: jryy qbar!");
+            Scanner readerPassword = new Scanner(System.in);
+            String command = readerPassword.nextLine();
+            if (command.equals(password)) {
+                System.out.println("Right!\n\nThe secret is: "+secretMessage);
                 break;
             }
             System.out.println("Wrong!");
