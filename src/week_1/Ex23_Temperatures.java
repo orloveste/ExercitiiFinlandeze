@@ -6,15 +6,14 @@ public class Ex23_Temperatures {
     public static void main(String[] args) {
         Scanner temperatureReader = new Scanner(System.in);
         System.out.print("Add temperature C': ");
-
         while (true){
             double temperature = Double.parseDouble(temperatureReader.nextLine());
             if (temperature >= -30.0 && temperature <=40.0){
+                Ex23_Graph.addNumber(temperature);
                 System.out.println("Normal range - recorded: "+temperature);
-                break;
-            } else {
+            } /*else {
                 System.out.print("Try again in Celsius -30 to 40`: ");
-            }
+            }*/
         }
     }
 }
