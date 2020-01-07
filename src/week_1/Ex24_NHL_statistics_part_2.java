@@ -1,3 +1,4 @@
+/*
 package week_1;
 
 import nhlstats.NHLStatistics;
@@ -73,3 +74,4 @@ public class Ex24_NHL_statistics_part_2 {
 //        }
 //    }
 //}
+*/

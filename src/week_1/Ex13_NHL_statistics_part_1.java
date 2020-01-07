@@ -1,3 +1,4 @@
+/*
 package week_1;
 
 import nhlstats.NHLStatistics;
@@ -32,4 +33,4 @@ public class Ex13_NHL_statistics_part_1 {
 //Print the statistics for Philadelphia Flyers (abbreviation: PHI). *Note in which order the players are printed in and
 // why that might be!*
 //Print the players in Anaheim Ducks (abbreviation: ANA) ordered by points
-//After you have successfully submitted the exercise, you can play with the code as you wish!
+//After you have successfully submitted the exercise, you can play with the code as you wish!*/
