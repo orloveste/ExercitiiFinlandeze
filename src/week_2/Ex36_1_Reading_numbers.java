@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex36_1_Reading_numbers {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        System.out.print("Type numbers: ");
+        System.out.println("Type numbers: ");
         while (true) {
             int introducedNUmber = Integer.parseInt(reader.nextLine());
             if (introducedNUmber < 0){
