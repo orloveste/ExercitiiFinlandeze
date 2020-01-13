@@ -8,7 +8,7 @@ public class Ex36_1_Reading_numbers {
         System.out.println("Type numbers: ");
         while (true) {
             int introducedNUmber = Integer.parseInt(reader.nextLine());
-            if (introducedNUmber < 0){
+            if (introducedNUmber == -1){
                 System.out.println("Thank you and see you later! ");
                 break;
             }
