@@ -24,8 +24,8 @@ public class Ex41_1_Guessing_a_number {
                 System.out.println("The number is lesser");
             }else {
                 System.out.println("Congratulations, your guess is correct!");
-                break;
-            }
+
+            } break;
         }
     }
     private static int drawNumber() {
