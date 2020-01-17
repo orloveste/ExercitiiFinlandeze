@@ -2,7 +2,7 @@ package week_2;
 
 public class Ex40_3_Printing_a_Crismas_tree {
     public static void main(String[] args) {
-        printXmasTree(10);
+        printXmasTree(20);
     }
     public static void printXmasTree(int height) {
         int counter = 0;
@@ -13,12 +13,12 @@ public class Ex40_3_Printing_a_Crismas_tree {
             System.out.println();
             counter++;
         }
-        printWhiteSpaces(height - 2);
-        printRectangle(3,2);
+        printRectangle(3,2, height-2);
     }
-    private static void printRectangle(int width, int height) {
+    private static void printRectangle(int width, int height, int spaceInFront) {
         int counter = 0;
         while (counter < height){
+            printWhiteSpaces(spaceInFront);
             printStars(width);
             System.out.println();
             counter++;
