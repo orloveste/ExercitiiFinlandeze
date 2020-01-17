@@ -3,7 +3,7 @@ package week_2;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ex_41_2_Repeated_guessing {
+public class Ex41_2_Repeated_guessing {
     public static void main(String[] args) {
         int randomNumber = drawNumber();
         Scanner reader = new Scanner(System.in);
