@@ -6,13 +6,11 @@ public class Hangman {
     }
     public void printStatus(){
         System.out.println("You have not made any guesses yet.");
-        System.out.println("Unused letters: abcdefghijklmnopqrstuvwxyz");
-        System.out.println();
+        System.out.println("Unused letters: abcdefghijklmnopqrstuvwxyz\n");
     }
     public static void printWord() {
         StringBuilder unknownWord = new StringBuilder("?????????");
-        System.out.println("Word to be guessed: " + unknownWord);
-        System.out.println();
+        System.out.println("Word to be guessed: " + unknownWord+ "\n");
     }
     public void printMan() {
         System.out.println(" __ __");
@@ -25,9 +23,9 @@ public class Hangman {
     public void guess(String letter) {
         String secretWord = "christmas";
         if (secretWord.contains(letter)) {
-            System.out.println("The letter " + letter + " was found in the word.");
+            System.out.println("The letter \'" + letter + "\' was found in the word.\n");
         } else {
-            System.out.println("The letter " + letter + " is not in this word.");
+            System.out.println("The letter \'" + letter + "\' is not in this word.\n");
         }
     }
     public static void printMenu() {
