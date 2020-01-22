@@ -28,11 +28,11 @@ public class Hangman {
             System.out.println("The letter \'" + letter + "\' is not in this word.\n");
         }
     }
-    public static void printMenu() {
-        System.out.println(" * menu *");
-        System.out.println("quit   - quits the game");
-        System.out.println("status  - prints the game status");
-        System.out.println("a single letter uses the letter as a guess");
-        System.out.println("an empty line prints this menu");
-    }
+//    public static void printMenu() {
+//        System.out.println(" * menu *");
+//        System.out.println("quit   - quits the game");
+//        System.out.println("status  - prints the game status");
+//        System.out.println("a single letter uses the letter as a guess");
+//        System.out.println("an empty line prints this menu");
+//    }
 }
