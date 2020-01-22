@@ -6,19 +6,22 @@ public class Hangman {
     }
     public void printStatus(){
         System.out.println("You have not made any guesses yet.");
+        //trebuie sa scoata literele din lista cand sunt utilizate
         System.out.println("Unused letters: abcdefghijklmnopqrstuvwxyz\n");
     }
-    public static void printWord() {
+    public void printWord() {
         StringBuilder unknownWord = new StringBuilder("?????????");
+        //trebuie sa identific litera si sa o adaug cand este ghicita
         System.out.println("Word to be guessed: " + unknownWord+ "\n");
     }
     public void printMan() {
-        System.out.println(" __ __");
+        //trebuie sa apara etapizat cand raspunsul este gresit - pana sunt epuizate
+        System.out.println(" ____");
         System.out.println(" |");
         System.out.println(" |");
         System.out.println(" |");
         System.out.println(" |");
-        System.out.println("/|");
+        System.out.println("/|\\");
     }
     public void guess(String letter) {
         String secretWord = "christmas";
