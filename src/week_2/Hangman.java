@@ -5,12 +5,14 @@ public class Hangman {
         return true;
     }
     public void printStatus(){
-        System.out.println("some");
-        System.out.println("status");
+        System.out.println("You have not made any guesses yet.");
+        System.out.println("Unused letters: abcdefghijklmnopqrstuvwxyz");
+        System.out.println();
     }
     public static void printWord() {
         StringBuilder unknownWord = new StringBuilder("?????????");
         System.out.println("Word to be guessed: " + unknownWord);
+        System.out.println();
     }
     public void printMan() {
         System.out.println(" __ __");
