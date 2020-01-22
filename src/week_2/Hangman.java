@@ -1,7 +1,7 @@
 package week_2;
 
 public class Hangman {
-    public boolean GameOn() {
+    public boolean gameOn() {
         return true;
     }
     public void printStatus(){
