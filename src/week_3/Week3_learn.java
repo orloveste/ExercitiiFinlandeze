@@ -2,14 +2,15 @@ package week_3;
 
 public class Week3_learn {
     public static void main(String[] args) {
-        String word = "Supercalifragilisticexpialidocious";
-        System.out.println(word.substring(14));
-        System.out.println(word.substring(9,20));
+        String book = "Mary Poppins - and";
+        String endPart = book.substring(4);
+
+        System.out.println("Harry"+endPart);
     }
 }
-//15.1 Other methods for strings
-//We often want to read only a specific part of a string. A method in the String class
-// called substring makes this possible. It can be used in two ways:
-//String word = "Supercalifragilisticexpialidocious";
-//System.out.println(word.substring(14)); //prints "listicexpialidocious"
-//System.out.println(word.substring(9,20)); //prints "fragilistic"
+//15.2 Other methods for strings
+//We can store the return value in a variable, because the return value of the substring
+// method is of type String.
+//String book = "Mary Poppins";
+//String endpart = book.substring(5);
+//System.out.println("Harry " + endpart); // prints "Harry Poppins"
