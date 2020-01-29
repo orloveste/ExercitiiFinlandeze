@@ -15,10 +15,12 @@ public class Ex55_A_word_inside_a_word {
         String secondWord = reader.nextLine();
 
         int index = firstWord.indexOf(secondWord);
-        int lastIndex = firstWord.lastIndexOf(secondWord);
+        int lastIndex = calculateCharacters(secondWord)+1;
+//        int lastIndex = firstWord.subSequence(index, secondWord.length());
+//        int lastIndex = firstWord.lastIndexOf(secondWord.length());
 
         if (firstWord.contains(secondWord)){
-            System.out.println("The word '"+firstWord.substring(index,lastIndex)+"' is found in the word '"+firstWord+"'.");
+            System.out.println("The word '"+firstWord.substring(index, lastIndex)+"' is found in the word '"+firstWord+"'.");
         } else {
             System.out.println("The word '"+secondWord+"' is not found in the word '"+firstWord+"'.");
         }
