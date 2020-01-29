@@ -9,14 +9,14 @@ public class Ex55_A_word_inside_a_word {
         String firstWord = reader.nextLine();
         System.out.print("Type the second word: ");
         String secondWord = reader.nextLine();
-        int index = firstWord.indexOf(secondWord);
+//        int index = firstWord.indexOf(secondWord);
 //        int index = firstWord.indexOf(secondWord.length());
 //        String compareString = String.valueOf(secondWord.compareToIgnoreCase(firstWord));
 //        int finalIndex = secondWord.length();
 //        int finalIndex = firstWord.codePointCount(secondWord);
 //        System.out.println(compareString);
-        if (index >= 0){
-            System.out.println("The word '"+firstWord.substring(index/*, finalIndex+1*/)+"' is found in the word '"+firstWord+"'.");
+        if (firstWord.contains(secondWord)){
+            System.out.println("The word '"+secondWord+"' is found in the word '"+firstWord+"'.");
         } else {
             System.out.println("The word '"+secondWord+"' is not found in the word '"+firstWord+"'.");
         }
