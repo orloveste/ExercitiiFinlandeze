@@ -13,17 +13,23 @@ public class Ex55_A_word_inside_a_word {
         String firstWord = reader.nextLine();
         System.out.print("Type the second word: ");
         String secondWord = reader.nextLine();
+        for (int i = 0; i<firstWord.length();++i){
+            if (firstWord.substring(i).equals(secondWord)){
+                System.out.println("The word '"+secondWord+"' is found in the word '"+firstWord+"'.");
+            }
+        }
 
-        int index = firstWord.indexOf(secondWord);
-        int lastIndex = calculateCharacters(secondWord)+1;
+//        int index = firstWord.indexOf(secondWord);
+//        int lastIndex = calculateCharacters(secondWord)+1;
+//
 //        int lastIndex = firstWord.subSequence(index, secondWord.length());
 //        int lastIndex = firstWord.lastIndexOf(secondWord.length());
 
-        if (firstWord.contains(secondWord)){
-            System.out.println("The word '"+firstWord.substring(index, lastIndex)+"' is found in the word '"+firstWord+"'.");
-        } else {
-            System.out.println("The word '"+secondWord+"' is not found in the word '"+firstWord+"'.");
-        }
+//        if (firstWord.contains(secondWord)){
+//            System.out.println("The word '"+firstWord.substring(index, lastIndex)+"' is found in the word '"+firstWord+"'.");
+//        } else {
+//            System.out.println("The word '"+secondWord+"' is not found in the word '"+firstWord+"'.");
+//        }
     }
 }
 //Exercise 55: A word inside a word
