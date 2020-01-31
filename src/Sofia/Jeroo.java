@@ -1,7 +1,13 @@
 package Sofia;
 
 public class Jeroo {
-    public void hop(int i) {
+    public Jeroo(int coloana, int linie, int north, int i2) {
+    }
+
+    public Jeroo(int coloana, int linie, int east) {
+    }
+
+    public void hop(int space) {
     }
 
     public void pick() {
@@ -11,5 +17,11 @@ public class Jeroo {
     }
 
     public void plant() {
+    }
+
+    public void give(Object ahead) {
+    }
+
+    public void toss() {
     }
 }
