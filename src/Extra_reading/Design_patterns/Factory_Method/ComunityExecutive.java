@@ -1,8 +1,9 @@
 package Extra_reading.Design_patterns.Factory_Method;
 
-class ComunityExecutive extends function implements Interviewer {
+class ComunityExecutive implements Interviewer {
     @Override
-    public void askQuestions() {
-        System.out.println("Ask comunity");
+    public function askQuestions() {
+        System.out.println("echo 'Asking about community building';");
+        return null;
     }
 }

@@ -1,8 +1,8 @@
 package Extra_reading.Design_patterns.Factory_Method;
 
-abstract class MarketingManager extends HiringManager{
+class MarketingManager extends HiringManager{
     @Override
-    protected function makeInterviewr() /*: Interviewer*/{//todo super?
+    protected Interviewer makeInterviewr(){
         return new ComunityExecutive();
     }
 }

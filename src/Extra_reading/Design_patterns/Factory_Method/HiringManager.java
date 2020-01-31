@@ -1,13 +1,12 @@
 package Extra_reading.Design_patterns.Factory_Method;
 
-public abstract class HiringManager {
-    private Object Interviewer;
+abstract class HiringManager {
+    abstract protected Interviewer makeInterviewr();
 
-    abstract protected function makeInterviewr()/* : Interviewer*/; //todo identify
-    public void takeInterview(){
-        /*$interviewer = $this->*/ makeInterviewr();// todo wtf
-        /*$interviewer->*/askQuestions();//todo same
+    public Interviewer takeInterview() {
+        Interviewer interviewer = this.makeInterviewr();
+        interviewer.askQuestions();
+        return interviewer;
     }
-
-    protected abstract void askQuestions();
 }
+

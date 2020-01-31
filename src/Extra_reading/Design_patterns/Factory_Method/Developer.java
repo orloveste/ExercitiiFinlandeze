@@ -1,8 +1,9 @@
 package Extra_reading.Design_patterns.Factory_Method;
 
-class Developer extends function implements Interviewer {
+class Developer implements Interviewer {
     @Override
-    public void askQuestions() {
-        System.out.println("Ask dev");
+    public function askQuestions() {
+        System.out.println("echo 'Asking about design patterns!';");
+    return null;
     }
 }
