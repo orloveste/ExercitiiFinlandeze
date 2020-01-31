@@ -1,12 +1,12 @@
 package Extra_reading.Design_patterns.Simple_Factory;
 
 public class WoodenDoor implements Door{
+    protected float width;
+    protected float height;
 
-    private float width;
-    private float height;
-    public void construct(float $width, float $height){
-        this.width = $width;
-        this.height = $height;
+    public WoodenDoor(float width, float height){
+        this.width = width;
+        this.height = height;
     }
     @Override
     public float getWidth() {
@@ -17,7 +17,4 @@ public class WoodenDoor implements Door{
     public float getHeight() {
         return this.height;
     }
-
-
-
 }
