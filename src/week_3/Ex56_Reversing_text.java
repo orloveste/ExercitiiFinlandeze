@@ -3,16 +3,20 @@ package week_3;
 import java.util.Scanner;
 
 public class Ex56_Reversing_text {
-    public static void reverse(String text){
-        String help;
+    public static String reverse(String text){
+        String help = "";
+        int count = text.length()-1;
+        while(count >= 0){
+            help = help + text.charAt(count--);
+        } return help;
     }
 
     public static void main(String[] args) {
         System.out.print("Type a text: ");
         Scanner reader = new Scanner(System.in);
         String text = reader.nextLine();
-        System.out.println(text);
-        reverse(text);
+        System.out.println(reverse(text));
+
     }
 
 }
