@@ -1,4 +1,4 @@
-package Sofia;
+package Extra_reading.Sofia;
 
 import static javax.swing.SwingConstants.*;
 

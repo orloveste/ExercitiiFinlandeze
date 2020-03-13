@@ -1,4 +1,4 @@
-package Sofia;
+package Extra_reading.Sofia;
 
 public class Jeroo {
     public Jeroo(int coloana, int linie, int north, int i2) {
