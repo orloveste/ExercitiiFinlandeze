@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Week3_learn {
     public static void main(String[] args) {
-        ArrayList<String> bleahList = new ArrayList<String>();
+        ArrayList<String> bleahList = new ArrayList<>();
         bleahList.add("Monk");
         bleahList.add("Blink");
         System.out.println(bleahList);
