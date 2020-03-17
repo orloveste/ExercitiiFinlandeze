@@ -4,51 +4,73 @@ import java.util.ArrayList;
 
 public class Week3_learn {
     public static void main(String[] args) {
-        ArrayList<String> bleahList = new ArrayList<>();
-        bleahList.add("Monk");
-        bleahList.add("Blink");
-        System.out.println(bleahList);
-        bleahList.clear();
-        bleahList.add("New Monk");
-        bleahList.add("New Blinky");
-        System.out.println(bleahList);
+        ArrayList<String> teachers = new ArrayList<>();
+        teachers.add("Monk");
+        teachers.add("Blink");
+        teachers.add("New Monk");
+        teachers.add("New Blinky");
+        teachers.add("Jovialu");
+        teachers.add("Romanov");
+        teachers.add("Tacker");
+        System.out.println(teachers);
+        System.out.println("the number o teachers is: "+ teachers.size());
+
+        System.out.println("first teacher is: "+ teachers.get(0));
+        System.out.println("last teacher is: "+ teachers.get(6));
+        teachers.remove("Blink");
+        System.out.println(teachers);
+        if (teachers.contains("Blink")){
+            System.out.println("Blink is here!");
+        }else {
+            System.out.println("Blink is on holiday");
+        }
     }
 }
-//17. ArrayList or an "object container"
-//Often during programming, we would like to keep many different strings in memory. A very
-// bad idea would be to define a variable for each of them: :
-//String word1;
-//String word2;
-//String word3;
-//// ...
-//String word10;
-//This would be such a good-for-nothing solution that it does not almost need an explanation
-// -- think of this approach for a word count of 100 or 1000!
-//Just like other modern programming languages, Java gives us different tools to store many
-// objects neatly in our programs. Now, we take a closer look at ArrayList, which is probably
-// the most used object container in Java.
-//The following lines of code make use of an ArrayList that holds specifically objects of type
-// String. A couple of strings are stored into the list.
-//import java.util.ArrayList;
+//17.1 Methods of ArrayLists
+//ArrayList provides us with many useful methods:
+//public static void main(String[] args) {
+//    ArrayList<String> teachers = new ArrayList<String>();
 //
-//public class ListProgram {
+//    teachers.add("Anthony");
+//    teachers.add("Barto");
+//    teachers.add("Paul");
+//    teachers.add("John");
+//    teachers.add("Martin");
+//    teachers.add("Matt");
 //
-//    public static void main(String[] args) {
-//        ArrayList<String> wordList = new ArrayList<String>();
+//    System.out.println("the number of teachers " + teachers.size() );
 //
-//        wordList.add("First");
-//        wordList.add("Second");
+//    System.out.println("first teacher on the list " + teachers.get(0));
+//    System.out.println("third teacher on the list " + teachers.get(2));
+//
+//    teachers.remove("Barto");
+//
+//    if (teachers.contains("Barto")) {
+//        System.out.println("Barto is on the teachers list");
+//    } else {
+//        System.out.println("Barto is not on the teachers list");
 //    }
 //}
-//In the above main program method, the first row creates a new ArrayList called wordList,
-// which can be used as a
-// container for String variables. The type of the ArrayList is ArrayList<String>, which
-// means that the ArrayList is meant for storing Strings. The list is created using the
-// command new ArrayList<String>();.
-//Note: to make the ArrayList work, we must first write an import statement at the beginning
-// of the program either import java.util.ArrayList; or import java.util.*;
-//When the list is created, two strings are added by calling the list method add. The list
-// will not run out of space, so theoretically the list can contain any amount of Strings
-// (as long as they fit in the computer's memory).
-//Internally an ArrayList is -- as its name suggests -- a list. The added strings
-// automatically go to the end of the ArrayList.
+//First a list of strings is created and then 6 names added to it. size tells us the amount
+// of strings in the list. Note: when the method is called, the call should have the following
+// format: teachers.size(). First comes the name of the object, then follows a dot followed by
+// the name of the method.
+//The strings will be in the list in the order in which they were added to it. By calling the
+// method get(i), we get
+// the value from the index (location) i in the list. The indexing of items in the list starts
+// from 0. This means that the first added string is located at index 0, the second at index 1,
+// and so on.
+//We can remove strings from lists through the method remove. The method can be used in two
+// ways. First, remove("characters") removes the string given as a parameter. Second,
+// remove(3) removes the 4th String from the list.
+//At the end of the example, the method contains is called. This method is used for asking
+// the list if it contains the string given as a parameter. If it does, the method returns
+// the value true.
+//Program output:
+//the number of teachers 6
+//first teacher on the list Anthony
+//third teacher on the list Paul
+//Barto is not on the teachers list
+//Note! The methods remove and contains assume that the objects stored in the ArrayList do
+// have an equals method.
+// We will get back to this later in the course.
