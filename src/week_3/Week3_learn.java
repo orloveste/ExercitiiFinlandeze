@@ -12,22 +12,28 @@ public class Week3_learn {
         teachers.add("Jovialu");
         teachers.add("Romanov");
         teachers.add("Tacker");
-        System.out.println(teachers);
+        int i = 0;
+        i++;
+        teachers.listIterator(i);
+        System.out.println(i++ +"" +teachers);
         System.out.println("the number o teachers is: "+ teachers.size());
 
         System.out.println("first teacher is: "+ teachers.get(0));
         System.out.println("last teacher is: "+ teachers.get(6));
         teachers.remove("Blink");
-        System.out.println(".remove(object) "+teachers);
+        System.out.println(".remove(object) "+i++ +"" +teachers);
         if (teachers.contains("Blink")){
             System.out.println("Blink is here!");
         }else {
             System.out.println("Blink is on holiday");
         }
         teachers.add(1, "Blink Reborn");//inject object to index
-        System.out.println(".add(index, element)"+ teachers);
+        System.out.println(".add(index, element)"+i++ +"" +teachers);
         teachers.add("Blink the Third");//add object last in line
-        System.out.println(".add(object)"+teachers);
+        System.out.println(".add(object)"+ i++ +"" +teachers);
+
+
+        System.out.println(i++ +"" +teachers);
     }
 }
 //17.1 Methods of ArrayLists
