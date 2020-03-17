@@ -18,12 +18,16 @@ public class Week3_learn {
         System.out.println("first teacher is: "+ teachers.get(0));
         System.out.println("last teacher is: "+ teachers.get(6));
         teachers.remove("Blink");
-        System.out.println(teachers);
+        System.out.println(".remove(object) "+teachers);
         if (teachers.contains("Blink")){
             System.out.println("Blink is here!");
         }else {
             System.out.println("Blink is on holiday");
         }
+        teachers.add(1, "Blink Reborn");//inject object to index
+        System.out.println(".add(index, element)"+ teachers);
+        teachers.add("Blink the Third");//add object last in line
+        System.out.println(".add(object)"+teachers);
     }
 }
 //17.1 Methods of ArrayLists
