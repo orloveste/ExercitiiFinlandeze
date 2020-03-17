@@ -1,52 +1,54 @@
 package week_3;
 
-import java.util.Locale;
+import java.util.ArrayList;
 
 public class Week3_learn {
     public static void main(String[] args) {
-        String firstWord = "fighting with COVID-19 is interesting";
-        String secondWord = "it's fun learning programming now";
-
-        System.out.println("our fist String '"+firstWord+"' has next charAt: "+firstWord.charAt(4));
-        System.out.println("our fist String '"+firstWord+"' has next indexOf ch, formatindex: "+firstWord.indexOf(5,4));
-        System.out.println("our fist String '"+firstWord+"' has next indexOf: "+firstWord.indexOf("covid"));
-        System.out.println("our fist String '"+firstWord+"' has next indexOf str, fromIndex: "+firstWord.indexOf("with",5));
-        System.out.println("our fist String '"+firstWord+"' has next equalsIgnoreCase: "+firstWord.equalsIgnoreCase("ing"));
-        System.out.println("our fist String '"+firstWord+"' has next split regex, limit: "+firstWord.split("r", 4));
-        System.out.println("our fist String '"+firstWord+"' has next split regex: "+firstWord.split("is"));
-        System.out.println("our fist String '"+firstWord+"' has next substring: "+firstWord.substring(2));
-        System.out.println("our fist String '"+firstWord+"' has next substring ,: "+firstWord.substring(3, 5));
-        System.out.println("our fist String '"+firstWord+"' has next subsequence: "+firstWord.subSequence(4, 6));
-        System.out.println("our fist String '"+firstWord+"' has next contains: "+firstWord.contains("ti"));
-        System.out.println("our fist String '"+firstWord+"' has next compareIgnoreCase: "+firstWord.compareToIgnoreCase("covid"));
-        System.out.println("our fist String '"+firstWord+"' has next isEmpty: "+firstWord.isEmpty());
-        Locale locale = Locale.forLanguageTag("zapa");
-        System.out.println("our fist String '"+firstWord+"' has next toLowerCase ,locale: "+firstWord.toLowerCase(locale));
-        System.out.println("our fist String '"+firstWord+"' has next toLowerCase: "+firstWord.toLowerCase());
-        System.out.println("our fist String '"+firstWord+"' has next equals: "+firstWord.equals(secondWord));
-        System.out.println("our fist String '"+firstWord+"' has next toString: "+firstWord.toString());
-        System.out.println("our fist String '"+firstWord+"' has next concat: "+firstWord.concat("sa"));
-        System.out.println("our fist String '"+firstWord+"' has next intern: "+firstWord.intern());
-        System.out.println("our fist String '"+firstWord+"' has next replace target, replacement: "+firstWord.replace("f", "The F"));
-        System.out.println("our fist String '"+firstWord+"' has next replace oldChar, newChar: "+firstWord.replace('i', 'w'));
-        System.out.println("our fist String '"+firstWord+"' has next replaceAll regex, replacement: "+firstWord.replaceAll("re", "qo"));
-        System.out.println("our fist String '"+firstWord+"' has next trim: "+firstWord.trim());
-        System.out.println("our fist String '"+firstWord+"' has next matches: "+firstWord.matches("r"));
-        System.out.println("our fist String '"+firstWord+"' has next codePointAt: "+firstWord.codePointAt(3));
-        System.out.println("our fist String '"+firstWord+"' has next toCharArray: "+firstWord.toCharArray());
-        System.out.println("our fist String '"+firstWord+"' has next CodePointCount , : "+firstWord.codePointCount(5, 9));
-        System.out.println("our fist String '"+firstWord+"' has next endsWith: "+firstWord.endsWith("ng"));
-        System.out.println("our fist String '"+firstWord+"' has next getBytes: "+firstWord.getBytes());
-        System.out.println("our fist String '"+firstWord+"' has next hashCode: "+firstWord.hashCode());
-        System.out.println("our fist String '"+firstWord+"' has next getChars -no go: "/*+ firstWord.getChars()*/);
-
-        System.out.println("our second String '"+secondWord+"' has next length: "+secondWord.length());
+        ArrayList<String> bleahList = new ArrayList<String>();
+        bleahList.add("Monk");
+        bleahList.add("Blink");
+        System.out.println(bleahList);
+        bleahList.clear();
+        bleahList.add("New Monk");
+        bleahList.add("New Blinky");
+        System.out.println(bleahList);
     }
 }
-//16. Object
-//Strings are a bit more clever and for example know how long they are:
-// ...code
-// We can determine the length by calling the String method length(). Strings have
-// other methods as well. Integers (or whole numbers, variables of type int) have no
-// methods at all. They do not "know" anything.
-//Strings are objects, or "something that has methods and a value".
+//17. ArrayList or an "object container"
+//Often during programming, we would like to keep many different strings in memory. A very
+// bad idea would be to define a variable for each of them: :
+//String word1;
+//String word2;
+//String word3;
+//// ...
+//String word10;
+//This would be such a good-for-nothing solution that it does not almost need an explanation
+// -- think of this approach for a word count of 100 or 1000!
+//Just like other modern programming languages, Java gives us different tools to store many
+// objects neatly in our programs. Now, we take a closer look at ArrayList, which is probably
+// the most used object container in Java.
+//The following lines of code make use of an ArrayList that holds specifically objects of type
+// String. A couple of strings are stored into the list.
+//import java.util.ArrayList;
+//
+//public class ListProgram {
+//
+//    public static void main(String[] args) {
+//        ArrayList<String> wordList = new ArrayList<String>();
+//
+//        wordList.add("First");
+//        wordList.add("Second");
+//    }
+//}
+//In the above main program method, the first row creates a new ArrayList called wordList,
+// which can be used as a
+// container for String variables. The type of the ArrayList is ArrayList<String>, which
+// means that the ArrayList is meant for storing Strings. The list is created using the
+// command new ArrayList<String>();.
+//Note: to make the ArrayList work, we must first write an import statement at the beginning
+// of the program either import java.util.ArrayList; or import java.util.*;
+//When the list is created, two strings are added by calling the list method add. The list
+// will not run out of space, so theoretically the list can contain any amount of Strings
+// (as long as they fit in the computer's memory).
+//Internally an ArrayList is -- as its name suggests -- a list. The added strings
+// automatically go to the end of the ArrayList.
