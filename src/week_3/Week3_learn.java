@@ -12,16 +12,13 @@ public class Week3_learn {
         teachers.add("Jovialu");
         teachers.add("Romanov");
         teachers.add("Tacker");
-        System.out.println("sout array = "+ teachers);
-        int place = 0;
-        teachers.add("test to add 2");
-        while (place < teachers.size()){
-            System.out.println(teachers.get(place));
-            place++;
+        System.out.println(teachers);
+        teachers.add("Test before 'for'");
+        for (String anyone : teachers){
+            System.out.println(anyone);
         }
-        System.out.println("sout array 2= "+teachers);
-        teachers.add("After hour Beach");// not take in print or array
-        System.out.println("sout array 3= "+teachers);
+        teachers.add("Cufi Muri");// not print :)
+        System.out.println(teachers);
     }
 }
 //17.2 Going through an ArrayList
