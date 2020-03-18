@@ -12,21 +12,16 @@ public class Week3_learn {
         teachers.add("Jovialu");
         teachers.add("Romanov");
         teachers.add("Tacker");
-
-        int place= 0;
-        System.out.println(teachers.get(place));
-        place++;
-        System.out.println(teachers.get(place));
-        place++;
-        System.out.println(teachers.get(place));
-        place++;
-        System.out.println(teachers.get(place));
-        place++;
-        System.out.println(teachers.get(place));
-        place++;
-        System.out.println(teachers.get(place));
-        place++;
-        System.out.println(teachers.get(place));
+        System.out.println("sout array = "+ teachers);
+        int place = 0;
+        teachers.add("test to add 2");
+        while (place < teachers.size()){
+            System.out.println(teachers.get(place));
+            place++;
+        }
+        System.out.println("sout array 2= "+teachers);
+        teachers.add("After hour Beach");// not take in print or array
+        System.out.println("sout array 3= "+teachers);
     }
 }
 //17.2 Going through an ArrayList
