@@ -13,13 +13,20 @@ public class Week3_learn {
         teachers.add("Romanov");
         teachers.add("Tacker");
 
-        System.out.println(teachers.get(0));
-        System.out.println(teachers.get(1));
-        System.out.println(teachers.get(2));
-        System.out.println(teachers.get(3));
-        System.out.println(teachers.get(4));
-        System.out.println(teachers.get(5));
-        System.out.println(teachers.get(6));
+        int place= 0;
+        System.out.println(teachers.get(place));
+        place++;
+        System.out.println(teachers.get(place));
+        place++;
+        System.out.println(teachers.get(place));
+        place++;
+        System.out.println(teachers.get(place));
+        place++;
+        System.out.println(teachers.get(place));
+        place++;
+        System.out.println(teachers.get(place));
+        place++;
+        System.out.println(teachers.get(place));
     }
 }
 //17.2 Going through an ArrayList
