@@ -1,8 +1,28 @@
 package week_3;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Ex57_Words {
     public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
 
+        ArrayList<String> words =  new ArrayList<>();
+
+        while (true) {
+            System.out.print("Type a word: ");
+            String wordEnter = reader.nextLine();
+            if ( wordEnter.equals("") ){
+                break;
+            } else {
+                words.add(wordEnter);
+            }
+        }
+
+        System.out.println("You typed the following words:");
+        for (String printWord : words) {
+            System.out.println(printWord);
+        }
     }
 }
 //    Create a program that asks the user to input words until the user types
